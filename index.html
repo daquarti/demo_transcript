@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Presentación con Video y Texto</title>
+    <style>
+        #video-container {
+            text-align: center;
+        }
+        #text-area {
+            font-family: monospace;
+            white-space: pre;
+            overflow: hidden;
+            font-size: 24px; /* Tamaño de la fuente aumentado */
+        }
+        #print-button {
+            display: block;
+            margin: 20px auto;
+        }
+        #my-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            width: 200px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor del Video -->
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vfpaiJe4BGk?start=135" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- Botón para mostrar el texto -->
+    <button id="print-button">Mostrar Texto</button>
+
+    <!-- Área donde se mostrará el texto -->
+    <div id="text-area"></div>
+
+    <!-- Imagen -->
+    <img id="my-image" src="https://umasalud.com.mx/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.97fd96b6.webp&w=256&q=75" alt="Logo de UMA Salud">
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
