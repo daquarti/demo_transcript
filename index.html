@@ -9,9 +9,11 @@
         }
         #text-area {
             font-family: monospace;
-            white-space: pre;
-            overflow: hidden;
+            white-space: pre-wrap; /* Asegura que se respeten los espacios y saltos de línea */
+            overflow: auto;
             font-size: 24px; /* Tamaño de la fuente aumentado */
+            width: 95%; /* Ajusta el ancho del textarea */
+            margin: 20px auto; /* Centra el textarea */
         }
         #print-button {
             display: block;
@@ -26,21 +28,16 @@
     </style>
 </head>
 <body>
-    <!-- Contenedor del Video -->
     <div id="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/vfpaiJe4BGk?start=135" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
-    <!-- Botón para mostrar el texto -->
     <button id="print-button">Mostrar Texto</button>
 
-    <!-- Área donde se mostrará el texto -->
-    <div id="text-area"></div>
+    <textarea id="text-area" rows="10" cols="50"></textarea>
 
-    <!-- Imagen -->
     <img id="my-image" src="https://umasalud.com.mx/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.97fd96b6.webp&w=256&q=75" alt="Logo de UMA Salud">
 
-    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
